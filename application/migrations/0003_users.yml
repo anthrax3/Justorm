@@ -1,0 +1,15 @@
+---
+version: 3
+model: User
+up:
+  add_field:
+    Users:
+      columns:
+        created_at:
+          type: timestamp
+        updated_at:
+          type: timestamp
+down:
+  delete_field:
+    Users:
+      columns: [created_at, updated_at]

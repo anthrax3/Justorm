@@ -1,0 +1,9 @@
+---
+version: 2
+model: User
+up:
+  rename_table:
+    User: Users
+down:
+  rename_table:
+    Users: User

@@ -1,0 +1,15 @@
+---
+version: 4
+model: User
+up:
+  modify_field:
+    Users:
+      columns:
+        contact_id:
+          type: string
+down:
+    modify_field:
+      Users:
+        columns:
+          contact_id:
+            type: int

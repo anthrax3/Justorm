@@ -1,0 +1,18 @@
+---
+version: 1
+model: User
+up:
+  create_table:
+    User:
+      columns:
+        email:
+          type: string
+          primary: true
+        username:
+          type: string(255)
+        password:
+          type: string(255)
+        contact_id:
+          type: integer
+down:
+  drop_table: User

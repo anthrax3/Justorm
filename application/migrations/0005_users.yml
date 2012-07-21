@@ -1,0 +1,11 @@
+---
+version: 5
+model: User
+up:
+  rename_field:
+    Users:
+      username: name
+down:
+  rename_field:
+    Users:
+      name: username
